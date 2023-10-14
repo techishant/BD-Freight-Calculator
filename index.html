@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duty Amount Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/jspdf-autotable"></script>
+
+    <script src="numName.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="themeSelector" id="themeSelector">
+        </div>
+        <div class="modal" id ="photo">
+            <h1 style="font-size: 34px;">BD Weight Calculator </h1>
+            <div class="inputBox">
+                <label for="invoiceValue">Invoice</span></label>
+                <input type="number" name="" value = "10000" id="invoiceValue">
+            </div>
+            <div class="inputBox">
+                <label for="lengthValue">Length</span></label>
+                <input type="number" name="" value = "100" id="lengthValue">
+            </div>
+            <div class="inputBox">
+                <label for="widthValue">Width</span></label>
+                <input type="number" name="" value = "100" id="widthValue">
+            </div>
+            <div class="inputBox">
+                <label for="heightValue">Height</span></label>
+                <input type="number" name="" value = "100" id="heightValue">
+            </div>
+            <div class="inputBox">
+                <label for="rateValue">Rate per kg</label>
+                <input type="number" name="" value = "10" id="rateValue">
+            </div>
+            <hr class="hor-bar">
+            
+            <div class="outputBox">
+                <span>Weight: <span id="weightValue"></span></span>
+                <span>Basic Freight: <span id="freightValue"></span></span>
+                <span>Over Weight: <span id="overWeightValue"></span></span>
+                <span>RAS 2 per kg: <span id="RASValue"></span></span>
+                <span>Fuel Price: <span id="fuelValue"></span></span>
+                <span>DOC: <span id="DOCValue"></span></span>
+                <span>Insurance: <span id="insuranceValue"></span></span>
+                <hr>
+                <span>Taxable value: <span id="taxAmtValue"></span></span>
+                <span>GST: <span id="gstAmtValue"></span></span>
+                <span>Total Bill: <span id="totalValue"></span></span>
+                <button id="genPDFbtn">Export PDF</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="imgOutput"></div> -->
+    <script src="export.js"></script>
+    <script src="scripts.js"></script>
+    <script src="designScript.js"></script>
+    <!-- <script src= "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script> -->
+</body>
+</html>
