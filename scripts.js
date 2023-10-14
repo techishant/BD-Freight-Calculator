@@ -59,8 +59,8 @@ function calculateValues(){
    DOC = 50; 
 
    
-   let pointInvVal = Math.round(0.1/100 * invoiceVal);
-   if(pointInvVal >50) ins = pointInvVal;
+   let pointInvVal = Math.round(0.1/100 * inv);
+   if(pointInvVal > 50) ins = pointInvVal;
    else ins = 50;
    
    taxAmt = r + fr + overWeight + RAS + fuelPrice + DOC + ins;
