@@ -11,13 +11,18 @@
 }
 
 .wrapper{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: var(--acc-color);
     display: grid;
     place-items: center;
     position: relative;
 }
+
+.wrapper h1 span img{
+    width: inherit;
+}
+
 .themeSelector{
     position: absolute;
     min-height: 40px;
@@ -56,16 +61,22 @@
 
 .modal h1{
     font-family: 'Poppins';
-    font-size: 40px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.modal h1 span{
+    width: 200px;
 }
 
 .modal .inputBox{
     display: flex;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     align-items: center;
     justify-content: space-between;
 }
+
 .modal .inputBox label{
     font-family: 'Poppins';
     font-size: 20px;
@@ -123,6 +134,16 @@
 
 .modal .inputBox .optBox label{
     font-size: 16px;
+}
+
+.modal .inputBox .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal .inputBox .inputGroup input{
+    width: 48.5px !important;
 }
 
 

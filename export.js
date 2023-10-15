@@ -54,14 +54,16 @@ function getRows() {
     let rows = []
 
     rows.push(["Weight (kg)", weight]);
-    rows.push(["Invoice", inv]);
+    rows.push(["Invoice Value", inv]);
     rows.push([`Dimension (l*w*h)`, `${l}*${w}*${h}`]);
+    rows.push(["No. of Pkt", pktVal.value]);
     rows.push(["Freight", fr]);
     rows.push(["Over Weight", `${overWeight}`]);
     rows.push(["RAS Value", RAS]);
     rows.push(["Fuel Price", fuelPrice]);
     rows.push(["DOC", DOC]);
     rows.push(["Insurance", ins]);
+    rows.push(["ODA", ODACharge]);
     rows.push(["Taxable Amount", taxAmt]);
     rows.push(["GST", gst]);
     rows.push(["TOTAL PAYABLE AMOUNT", total]);
