@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,53 +11,63 @@
     <script src="https://unpkg.com/jspdf-autotable"></script>
 
     <script src="numName.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCVJGL8YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BSCVJGL8YN');
+    </script>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="themeSelector" id="themeSelector">
         </div>
-        <div class="modal" id ="photo">
+        <div class="modal" id="photo">
             <h1><span> <img src="logo.png" alt="Blue Dart Logo"></span><br>Freight Calculator</h1>
             <div class="inputBox">
                 <label for="invoiceValue">Invoice</span></label>
-                <input type="number" name="" value = "10000" id="invoiceValue">
+                <input type="number" name="" value="10000" id="invoiceValue">
             </div>
             <div class="inputBox">
                 <label for="lengthValue">Dimensions</span></label>
                 <div class="inputGroup">
-                    <input type="number" name="" value = "25" id="lengthValue">
-                    <input type="number" name="" value = "30" id="widthValue">
-                    <input type="number" name="" value = "10" id="heightValue">
+                    <input type="number" name="" value="25" id="lengthValue">
+                    <input type="number" name="" value="30" id="widthValue">
+                    <input type="number" name="" value="10" id="heightValue">
                 </div>
             </div>
             <div class="inputBox">
                 <label for="pktValue">Pkt Qty</span></label>
-                <input type="number" name="" value = "10" id="pktValue">
+                <input type="number" name="" value="10" id="pktValue">
             </div>
             <div class="inputBox">
                 <label for="rateValue">Rate per kg</label>
-                <input type="number" name="" value = "10" id="rateValue">
+                <input type="number" name="" value="10" id="rateValue">
             </div>
             <div class="inputBox">
                 <label for="inputWeightValue">Weight</label>
-                <input type="number" name="" value = "10" id="inputWeightValue">
+                <input type="number" name="" value="10" id="inputWeightValue">
             </div>
             <div class="inputBox">
                 <label for="overWeightValue">Over Weight</label>
-                <input type="number" name="" value = "10" id="overWeightValue">
+                <input type="number" name="" value="10" id="overWeightValue">
             </div>
             <hr class="hor-bar">
             <!-- <hr class="hor-bar"> -->
-            
+
             <div class="outputBox">
                 <span>Weight: <span id="weightValue"></span></span>
                 <div class="inputBox sm-input">
                     <label for="RASValue">RAS</label>
-                    <input type="number" name="" value = "10" id="RASValue">
+                    <input type="number" name="" value="10" id="RASValue">
                 </div>
                 <div class="inputBox sm-input">
                     <label for="ODAchargeValue">ODA Charge</label>
-                    <input type="number" name="" value = "10" id="ODAchargeValue">
+                    <input type="number" name="" value="10" id="ODAchargeValue">
                 </div>
                 <span>Basic Freight: <span id="freightValue"></span></span>
                 <!-- <span>Over Weight: <span id="overWeightValue"></span></span> -->
@@ -78,4 +89,5 @@
     <script src="designScript.js"></script>
     <!-- <script src= "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script> -->
 </body>
+
 </html>
