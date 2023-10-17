@@ -61,7 +61,7 @@
 
 .modal h1{
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
     text-align: center;
 }
@@ -178,4 +178,26 @@
     background: var(--acc-color);
     height: 1px;
     border: none;
+    margin-bottom: 4px;
+}
+
+.sm-input {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.sm-input label{
+    font-size: 16px !important;
+    /* mar-bottom: 0px !important; */
+}
+
+.sm-input input{
+    height: 20px !important;
+    font-weight: bold;
+    text-align: right;
+    width: 60px !important;
+}
+
+.sm-input input::-webkit-outer-spin-button,
+.sm-input input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
 }

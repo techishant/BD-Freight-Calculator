@@ -16,22 +16,22 @@
         <div class="themeSelector" id="themeSelector">
         </div>
         <div class="modal" id ="photo">
-            <h1 style="font-size: 34px;"><span> <img src="logo.png" alt="Blue Dart Logo"></span><br>Freight Calculator</h1>
+            <h1><span> <img src="logo.png" alt="Blue Dart Logo"></span><br>Freight Calculator</h1>
             <div class="inputBox">
                 <label for="invoiceValue">Invoice</span></label>
-                <input type="number" name="" value = "100000" id="invoiceValue">
+                <input type="number" name="" value = "10000" id="invoiceValue">
             </div>
             <div class="inputBox">
                 <label for="lengthValue">Dimensions</span></label>
                 <div class="inputGroup">
-                    <input type="number" name="" value = "100" id="lengthValue">
-                    <input type="number" name="" value = "100" id="widthValue">
-                    <input type="number" name="" value = "100" id="heightValue">
+                    <input type="number" name="" value = "25" id="lengthValue">
+                    <input type="number" name="" value = "30" id="widthValue">
+                    <input type="number" name="" value = "10" id="heightValue">
                 </div>
             </div>
             <div class="inputBox">
                 <label for="pktValue">Pkt Qty</span></label>
-                <input type="number" name="" value = "100" id="pktValue">
+                <input type="number" name="" value = "10" id="pktValue">
             </div>
             <div class="inputBox">
                 <label for="rateValue">Rate per kg</label>
@@ -45,17 +45,22 @@
                 <label for="overWeightValue">Over Weight</label>
                 <input type="number" name="" value = "10" id="overWeightValue">
             </div>
-            <div class="inputBox">
-                <label for="ODAchargeValue">ODA Charge</label>
-                <input type="number" name="" value = "10" id="ODAchargeValue">
-            </div>
             <hr class="hor-bar">
+            <!-- <hr class="hor-bar"> -->
             
             <div class="outputBox">
                 <span>Weight: <span id="weightValue"></span></span>
+                <div class="inputBox sm-input">
+                    <label for="RASValue">RAS</label>
+                    <input type="number" name="" value = "10" id="RASValue">
+                </div>
+                <div class="inputBox sm-input">
+                    <label for="ODAchargeValue">ODA Charge</label>
+                    <input type="number" name="" value = "10" id="ODAchargeValue">
+                </div>
                 <span>Basic Freight: <span id="freightValue"></span></span>
                 <!-- <span>Over Weight: <span id="overWeightValue"></span></span> -->
-                <span>RAS 2 per kg: <span id="RASValue"></span></span>
+                <!-- <span>RAS 2 per kg: <span id="RASValue"></span></span> -->
                 <span>Fuel Price: <span id="fuelValue"></span></span>
                 <span>DOC: <span id="DOCValue"></span></span>
                 <span>Insurance: <span id="insuranceValue"></span></span>
