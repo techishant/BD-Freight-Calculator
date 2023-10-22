@@ -26,24 +26,60 @@
 .themeSelector{
     position: absolute;
     min-height: 40px;
-    min-width: 200px;
+    /* width: 50px; */
+    overflow: hidden;
     width: auto;
     display: flex;
     background: white;
     top:0;
-    left: 0;
+    left: -285px;
     justify-content: space-evenly;
     padding: 0px 10px 0px 10px;
     column-gap: 12px;
     align-items: center;
     border-bottom-right-radius: 12px;
+    transition: 0.9s ease;
 }
+
+.themeSelector:hover{
+    left: 0;
+}
+.themeSelector:hover > span{
+    opacity: 1;
+}
+
+.thm-icon{
+    background: linear-gradient(57deg, green, lime, yellow, skyblue, blue);
+    animation: rotation infinite 50s ease;
+    opacity: 1 !important;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.themeSelector:hover > .thm-icon{
+    opacity: 0 !important;
+    transition: 1s ease;
+    width: 0;
+}
+
 .themeSelector span{
+    opacity: 0;
     height: 28px;
     width: 28px;
     border-radius: 100%;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .themeSelector span:hover{
     transform: scale(1.1);
